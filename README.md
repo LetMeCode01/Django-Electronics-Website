@@ -223,4 +223,4 @@ Asigura integritate si performanta la interogari.
 * E-commerce Architecture
 * Production-ready Error Handling
 
-**Pentru o vizualizare mai detaliata a taskurilor si rezultatele practice ale conceptelor aplicate, va invit sa parcurgeti documentatia si sa rulati local aplicatia.**
+**Pentru o vizualizare mai detaliata a taskurilor si a rezultatelor practice ale conceptelor aplicate, va invit sa parcurgeti documentatia si sa rulati local aplicatia.**
