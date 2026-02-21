@@ -1,0 +1,18 @@
+<head>
+
+</head>
+<body>
+    {% include 'sidebar.html' %}
+    <div style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+        <ul>
+            {% for p in prod %}
+                <li style="align-items: center;">{{ p.nume }} | {{ p.pret }} Ron</li>
+            {% endfor %}
+        </ul>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Cauta</button>
+        </form>
+    </div>
+</body>

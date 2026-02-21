@@ -1,0 +1,741 @@
+[2026-01-17 12:23:19] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:23:32] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 12:23:33] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:24:20] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 12:24:21] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:24:39] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 12:24:40] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:25:24] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 12:25:25] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:26:17] [WARNING] [django.request] [log:249] Not Found: /
+[2026-01-17 12:26:17] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 5489
+[2026-01-17 12:26:23] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 10636
+[2026-01-17 12:27:05] [INFO] [django.server] [log:249] "GET /produse/8 HTTP/1.1" 301 0
+[2026-01-17 12:27:05] [CRITICAL] [django] [views:139] Eroare critica in produs_detail pentru ID 8: No Produs matches the given query.
+[2026-01-17 12:27:06] [WARNING] [django.request] [log:249] Not Found: /produse/8/
+[2026-01-17 12:27:06] [WARNING] [django.server] [log:249] "GET /produse/8/ HTTP/1.1" 404 2938
+[2026-01-17 12:34:46] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\proiect_electronice\settings.py changed, reloading.
+[2026-01-17 12:34:47] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:35:31] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 12:35:31] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:35:42] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\urls.py changed, reloading.
+[2026-01-17 12:35:43] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:36:25] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\proiect_electronice\urls.py changed, reloading.
+[2026-01-17 12:36:25] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:36:41] [WARNING] [django.request] [log:249] Forbidden: /interzis/
+[2026-01-17 12:36:41] [WARNING] [django.server] [log:249] "GET /interzis/ HTTP/1.1" 403 3081
+[2026-01-17 12:36:44] [WARNING] [django.request] [log:249] Forbidden: /interzis/
+[2026-01-17 12:36:44] [WARNING] [django.server] [log:249] "GET /interzis/ HTTP/1.1" 403 3081
+[2026-01-17 12:36:47] [WARNING] [django.request] [log:249] Forbidden: /interzis/
+[2026-01-17 12:36:47] [WARNING] [django.server] [log:249] "GET /interzis/ HTTP/1.1" 403 3081
+[2026-01-17 12:37:17] [WARNING] [django.request] [log:249] Forbidden: /interzis/
+[2026-01-17 12:37:17] [WARNING] [django.server] [log:249] "GET /interzis/ HTTP/1.1" 403 3081
+[2026-01-17 12:37:20] [WARNING] [django.request] [log:249] Forbidden: /interzis/
+[2026-01-17 12:37:20] [WARNING] [django.server] [log:249] "GET /interzis/ HTTP/1.1" 403 3081
+[2026-01-17 12:37:21] [WARNING] [django.request] [log:249] Forbidden: /interzis/
+[2026-01-17 12:37:21] [WARNING] [django.server] [log:249] "GET /interzis/ HTTP/1.1" 403 3290
+[2026-01-17 12:38:46] [INFO] [django.server] [log:249] "GET /login/ HTTP/1.1" 200 4900
+[2026-01-17 12:39:04] [INFO] [django.server] [log:249] "GET /admin/ HTTP/1.1" 200 14226
+[2026-01-17 12:39:06] [INFO] [django.server] [log:249] "GET /admin/auth/user/11/change/ HTTP/1.1" 200 30290
+[2026-01-17 12:39:07] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:39:41] [INFO] [django] [views:344] Login reusit pentru utilizatorul: mihai12 de la IP 127.0.0.1
+[2026-01-17 12:39:41] [INFO] [django.server] [log:249] "POST /login/ HTTP/1.1" 302 0
+[2026-01-17 12:39:41] [INFO] [django.server] [log:249] "GET /profil/ HTTP/1.1" 200 4817
+[2026-01-17 12:39:52] [WARNING] [django.request] [log:249] Forbidden: /interzis/
+[2026-01-17 12:39:52] [WARNING] [django.server] [log:249] "GET /interzis/ HTTP/1.1" 403 3077
+[2026-01-17 12:41:50] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\admin.py changed, reloading.
+[2026-01-17 12:41:50] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:42:12] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 12:42:13] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:42:25] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 12:42:26] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:42:38] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\forms.py changed, reloading.
+[2026-01-17 12:42:39] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:43:17] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\urls.py changed, reloading.
+[2026-01-17 12:43:19] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:44:54] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\urls.py changed, reloading.
+[2026-01-17 12:44:55] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 12:47:33] [INFO] [django.server] [log:249] "GET /login/ HTTP/1.1" 200 4900
+[2026-01-17 12:47:39] [INFO] [django.server] [log:249] "POST /login/ HTTP/1.1" 200 5138
+[2026-01-17 12:47:46] [INFO] [django] [views:432] Login reusit pentru utilizatorul: mihaisima22 de la IP 127.0.0.1
+[2026-01-17 12:47:46] [INFO] [django.server] [log:249] "POST /login/ HTTP/1.1" 302 0
+[2026-01-17 12:47:46] [INFO] [django.server] [log:249] "GET /profil/ HTTP/1.1" 200 4002
+[2026-01-17 12:48:15] [INFO] [django.server] [log:249] "GET /login/ HTTP/1.1" 200 4900
+[2026-01-17 12:48:18] [INFO] [django.server] [log:249] "GET /log HTTP/1.1" 301 0
+[2026-01-17 12:48:18] [INFO] [django.server] [log:249] "GET /log/ HTTP/1.1" 200 21077
+[2026-01-17 12:48:26] [INFO] [django.server] [log:249] "GET /info HTTP/1.1" 301 0
+[2026-01-17 12:48:27] [INFO] [django.server] [log:249] "GET /info/ HTTP/1.1" 200 3724
+[2026-01-17 12:48:54] [INFO] [django.server] [log:249] "GET /login/ HTTP/1.1" 200 4900
+[2026-01-17 12:49:02] [INFO] [django.server] [log:249] "GET /log HTTP/1.1" 301 0
+[2026-01-17 12:49:03] [INFO] [django.server] [log:249] "GET /log/ HTTP/1.1" 200 20874
+[2026-01-17 12:49:06] [INFO] [django.server] [log:249] "GET /info/ HTTP/1.1" 200 3724
+[2026-01-17 12:49:28] [INFO] [django.server] [log:249] "GET /login/ HTTP/1.1" 200 4900
+[2026-01-17 12:49:38] [INFO] [django] [views:432] Login reusit pentru utilizatorul: mihai12 de la IP 127.0.0.1
+[2026-01-17 12:49:38] [INFO] [django.server] [log:249] "POST /login/ HTTP/1.1" 302 0
+[2026-01-17 12:49:38] [INFO] [django.server] [log:249] "GET /profil/ HTTP/1.1" 200 4817
+[2026-01-17 12:49:44] [INFO] [django.server] [log:249] "GET /login/ HTTP/1.1" 200 4900
+[2026-01-17 12:49:47] [INFO] [django.server] [log:249] "GET /log HTTP/1.1" 301 0
+[2026-01-17 12:49:47] [WARNING] [django.request] [log:249] Forbidden: /log/
+[2026-01-17 12:49:47] [WARNING] [django.server] [log:249] "GET /log/ HTTP/1.1" 403 3078
+[2026-01-17 12:50:27] [INFO] [django.server] [log:249] "GET /admin/ HTTP/1.1" 302 0
+[2026-01-17 12:50:28] [INFO] [django.server] [log:249] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3615
+[2026-01-17 12:50:32] [INFO] [django.server] [log:249] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2026-01-17 12:50:32] [INFO] [django.server] [log:249] "GET /admin/ HTTP/1.1" 200 14226
+[2026-01-17 12:50:35] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 16235
+[2026-01-17 12:50:35] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:50:51] [INFO] [django.server] [log:249] "GET /admin/auth/user/add/ HTTP/1.1" 200 15648
+[2026-01-17 12:50:51] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:51:17] [INFO] [django.server] [log:249] "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+[2026-01-17 12:51:17] [INFO] [django.server] [log:249] "GET /admin/auth/user/12/change/ HTTP/1.1" 200 49105
+[2026-01-17 12:51:17] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:51:18] [INFO] [django.server] [log:249] "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+[2026-01-17 12:51:18] [INFO] [django.server] [log:249] "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 651
+[2026-01-17 12:52:59] [INFO] [django.server] [log:249] "POST /admin/auth/user/12/change/ HTTP/1.1" 302 0
+[2026-01-17 12:52:59] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 16877
+[2026-01-17 12:53:00] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:53:04] [INFO] [django.server] [log:249] "GET /admin/auth/user/12/change/ HTTP/1.1" 200 48980
+[2026-01-17 12:53:05] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:53:12] [INFO] [django.server] [log:249] "POST /admin/auth/user/12/change/ HTTP/1.1" 302 0
+[2026-01-17 12:53:12] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 16877
+[2026-01-17 12:53:12] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:53:18] [INFO] [django.server] [log:249] "GET /admin/auth/user/12/change/ HTTP/1.1" 200 48972
+[2026-01-17 12:53:18] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:53:21] [INFO] [django.server] [log:249] "POST /admin/auth/user/12/change/ HTTP/1.1" 302 0
+[2026-01-17 12:53:21] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 16877
+[2026-01-17 12:53:21] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:53:51] [INFO] [django.server] [log:249] "GET /admin/auth/group/ HTTP/1.1" 200 11649
+[2026-01-17 12:53:51] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:53:53] [INFO] [django.server] [log:249] "GET /admin/auth/group/add/ HTTP/1.1" 200 19383
+[2026-01-17 12:53:53] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:55:00] [INFO] [django.server] [log:249] "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+[2026-01-17 12:55:00] [INFO] [django.server] [log:249] "GET /admin/auth/group/ HTTP/1.1" 200 13144
+[2026-01-17 12:55:00] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:55:11] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 16989
+[2026-01-17 12:55:11] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:55:13] [INFO] [django.server] [log:249] "GET /admin/auth/user/1/change/ HTTP/1.1" 200 49028
+[2026-01-17 12:55:13] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:55:29] [INFO] [django.server] [log:249] "POST /admin/auth/user/1/change/ HTTP/1.1" 302 0
+[2026-01-17 12:55:29] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 17188
+[2026-01-17 12:55:29] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:55:33] [INFO] [django.server] [log:249] "GET /admin/auth/group/ HTTP/1.1" 200 12934
+[2026-01-17 12:55:33] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:55:34] [INFO] [django.server] [log:249] "GET /admin/auth/group/1/change/ HTTP/1.1" 200 20415
+[2026-01-17 12:55:34] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:55:37] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 16989
+[2026-01-17 12:55:37] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:55:40] [INFO] [django.server] [log:249] "GET /admin/auth/user/1/change/ HTTP/1.1" 200 49060
+[2026-01-17 12:55:40] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:56:22] [INFO] [django.server] [log:249] "GET /adauga-produs HTTP/1.1" 301 0
+[2026-01-17 12:56:22] [INFO] [django.server] [log:249] "GET /adauga-produs/ HTTP/1.1" 200 4891
+[2026-01-17 12:59:11] [INFO] [django.server] [log:249] "GET /admin/ HTTP/1.1" 200 14513
+[2026-01-17 12:59:14] [INFO] [django.server] [log:249] "GET /admin/auth/group/ HTTP/1.1" 200 12934
+[2026-01-17 12:59:14] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:59:17] [INFO] [django.server] [log:249] "GET /admin/auth/group/add/ HTTP/1.1" 200 19383
+[2026-01-17 12:59:17] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:59:54] [INFO] [django.server] [log:249] "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+[2026-01-17 12:59:54] [INFO] [django.server] [log:249] "GET /admin/auth/group/ HTTP/1.1" 200 13426
+[2026-01-17 12:59:54] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 12:59:56] [INFO] [django.server] [log:249] "GET /admin/auth/group/2/change/ HTTP/1.1" 200 20403
+[2026-01-17 12:59:56] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:00:00] [INFO] [django.server] [log:249] "POST /admin/auth/group/2/change/ HTTP/1.1" 302 0
+[2026-01-17 13:00:00] [INFO] [django.server] [log:249] "GET /admin/auth/group/ HTTP/1.1" 200 13428
+[2026-01-17 13:00:00] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:00:01] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 17065
+[2026-01-17 13:00:01] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:00:03] [INFO] [django.server] [log:249] "GET /admin/auth/user/1/change/ HTTP/1.1" 200 49110
+[2026-01-17 13:00:03] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:00:11] [INFO] [django.server] [log:249] "POST /admin/auth/user/1/change/ HTTP/1.1" 302 0
+[2026-01-17 13:00:11] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 17264
+[2026-01-17 13:00:11] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:00:13] [INFO] [django.server] [log:249] "GET /admin/auth/group/ HTTP/1.1" 200 13219
+[2026-01-17 13:00:13] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:00:15] [INFO] [django.server] [log:249] "GET /admin/auth/group/1/change/ HTTP/1.1" 200 20415
+[2026-01-17 13:00:15] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:00:49] [INFO] [django.server] [log:249] "POST /admin/auth/group/1/change/ HTTP/1.1" 302 0
+[2026-01-17 13:00:49] [INFO] [django.server] [log:249] "GET /admin/auth/group/ HTTP/1.1" 200 13431
+[2026-01-17 13:00:49] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:00:55] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 17065
+[2026-01-17 13:00:55] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:00:57] [INFO] [django.server] [log:249] "GET /admin/auth/user/1/change/ HTTP/1.1" 200 49119
+[2026-01-17 13:00:57] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:01:08] [INFO] [django.server] [log:249] "POST /admin/auth/user/1/change/ HTTP/1.1" 302 0
+[2026-01-17 13:01:08] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 17264
+[2026-01-17 13:01:08] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:01:11] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 17065
+[2026-01-17 13:01:11] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:01:13] [INFO] [django.server] [log:249] "GET /admin/auth/user/add/ HTTP/1.1" 200 15648
+[2026-01-17 13:01:13] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:01:25] [INFO] [django.server] [log:249] "GET /admin/auth/group/ HTTP/1.1" 200 13219
+[2026-01-17 13:01:25] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:01:27] [INFO] [django.server] [log:249] "GET /admin/auth/group/1/change/ HTTP/1.1" 200 19713
+[2026-01-17 13:01:28] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:01:32] [INFO] [django.server] [log:249] "POST /admin/auth/group/1/change/ HTTP/1.1" 302 0
+[2026-01-17 13:01:32] [INFO] [django.server] [log:249] "GET /admin/auth/group/ HTTP/1.1" 200 13431
+[2026-01-17 13:01:32] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:01:34] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 17065
+[2026-01-17 13:01:34] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:01:41] [INFO] [django.server] [log:249] "GET /admin/auth/user/10/change/ HTTP/1.1" 200 49179
+[2026-01-17 13:01:41] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:01:51] [INFO] [django.server] [log:249] "POST /admin/auth/user/10/change/ HTTP/1.1" 302 0
+[2026-01-17 13:01:51] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 17262
+[2026-01-17 13:01:51] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:01:54] [INFO] [django.server] [log:249] "GET /admin/auth/group/ HTTP/1.1" 200 13219
+[2026-01-17 13:01:54] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:05:01] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\models.py changed, reloading.
+[2026-01-17 13:05:02] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:05:29] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 13:05:30] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:05:36] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\urls.py changed, reloading.
+[2026-01-17 13:05:37] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:06:45] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\models.py changed, reloading.
+[2026-01-17 13:06:46] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:07:46] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:08:59] [WARNING] [django.request] [log:249] Not Found: /
+[2026-01-17 13:08:59] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 7047
+[2026-01-17 13:09:10] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-01-17 13:09:12] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-01-17 13:09:13] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-01-17 13:09:13] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-01-17 13:09:14] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-01-17 13:09:15] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-01-17 13:10:24] [INFO] [django.server] [log:249] "GET /activeaza-oferta/ HTTP/1.1" 302 0
+[2026-01-17 13:10:24] [INFO] [django.server] [log:249] "GET /oferta/ HTTP/1.1" 200 3860
+[2026-01-17 13:11:32] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-01-17 13:11:36] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-01-17 13:11:37] [INFO] [django.server] [log:249] "GET /activeaza-oferta/ HTTP/1.1" 302 0
+[2026-01-17 13:11:37] [INFO] [django.server] [log:249] "GET /oferta/ HTTP/1.1" 200 3860
+[2026-01-17 13:12:03] [INFO] [django.server] [log:249] "GET /activeaza-oferta/ HTTP/1.1" 302 0
+[2026-01-17 13:12:03] [INFO] [django.server] [log:249] "GET /oferta/ HTTP/1.1" 200 3860
+[2026-01-17 13:12:15] [INFO] [django.server] [log:249] "GET /activeaza-oferta HTTP/1.1" 301 0
+[2026-01-17 13:12:15] [INFO] [django.server] [log:249] "GET /activeaza-oferta/ HTTP/1.1" 302 0
+[2026-01-17 13:12:15] [INFO] [django.server] [log:249] "GET /oferta/ HTTP/1.1" 200 3860
+[2026-01-17 13:13:13] [WARNING] [django.request] [log:249] Not Found: /
+[2026-01-17 13:13:13] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 7047
+[2026-01-17 13:13:19] [INFO] [django.server] [log:249] "GET /logout HTTP/1.1" 301 0
+[2026-01-17 13:13:19] [ERROR] [django.request] [log:249] Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py", line 513, in logout_view
+    return redirect('electronice:index')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\urls\resolvers.py", line 842, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' not found. 'index' is not a valid view function or pattern name.
+[2026-01-17 13:13:19] [ERROR] [django.server] [log:249] "GET /logout/ HTTP/1.1" 500 94903
+[2026-01-17 13:13:30] [INFO] [django.server] [log:249] "GET /login/ HTTP/1.1" 200 4900
+[2026-01-17 13:13:41] [INFO] [django] [views:432] Login reusit pentru utilizatorul: mihai12 de la IP 127.0.0.1
+[2026-01-17 13:13:41] [INFO] [django.server] [log:249] "POST /login/ HTTP/1.1" 302 0
+[2026-01-17 13:13:41] [INFO] [django.server] [log:249] "GET /profil/ HTTP/1.1" 200 4817
+[2026-01-17 13:13:43] [ERROR] [django.request] [log:249] Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py", line 513, in logout_view
+    return redirect('electronice:index')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\urls\resolvers.py", line 842, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' not found. 'index' is not a valid view function or pattern name.
+[2026-01-17 13:13:43] [ERROR] [django.server] [log:249] "GET /logout/ HTTP/1.1" 500 95061
+[2026-01-17 13:13:54] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:13:58] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:13:58] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:13:59] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:13:59] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:00] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:00] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:00] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:01] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:01] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:01] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:02] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:02] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:02] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:02] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:03] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:03] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:03] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:03] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 12180
+[2026-01-17 13:14:28] [INFO] [django.server] [log:249] "GET /oferta/ HTTP/1.1" 302 0
+[2026-01-17 13:14:28] [INFO] [django.server] [log:249] "GET /login/?next=/oferta/ HTTP/1.1" 200 4900
+[2026-01-17 13:14:43] [INFO] [django.server] [log:249] "GET /activeaza-oferta/ HTTP/1.1" 302 0
+[2026-01-17 13:14:43] [INFO] [django.server] [log:249] "GET /login/?next=/activeaza-oferta/ HTTP/1.1" 200 4900
+[2026-01-17 13:15:42] [WARNING] [django.request] [log:249] Not Found: /
+[2026-01-17 13:15:42] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 7047
+[2026-01-17 13:15:46] [INFO] [django.server] [log:249] "GET /oferta/ HTTP/1.1" 302 0
+[2026-01-17 13:15:46] [INFO] [django.server] [log:249] "GET /login/?next=/oferta/ HTTP/1.1" 200 4900
+[2026-01-17 13:22:54] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 13:22:55] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:23:27] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 13:23:28] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:24:03] [INFO] [django.server] [log:249] "GET /oferta/ HTTP/1.1" 302 0
+[2026-01-17 13:24:03] [INFO] [django.server] [log:249] "GET /login/?next=/oferta/ HTTP/1.1" 200 4900
+[2026-01-17 13:24:23] [INFO] [django] [views:432] Login reusit pentru utilizatorul: mihai12 de la IP 127.0.0.1
+[2026-01-17 13:24:23] [INFO] [django.server] [log:249] "POST /login/?next=/oferta/ HTTP/1.1" 302 0
+[2026-01-17 13:24:23] [INFO] [django.server] [log:249] "GET /profil/ HTTP/1.1" 200 4817
+[2026-01-17 13:24:30] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-01-17 13:24:34] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-01-17 13:24:35] [INFO] [django.server] [log:249] "GET /activeaza-oferta/ HTTP/1.1" 302 0
+[2026-01-17 13:24:38] [ERROR] [django.request] [log:249] Internal Server Error: /oferta/
+Traceback (most recent call last):
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py", line 545, in pagina_oferta
+    return render(request, 'oferte.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 585, in parse
+    raise self.error(token, e)
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 556, in parse
+    raise self.error(token, e)
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 554, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 676, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 771, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 682, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Template: C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\templates\oferte.html, Invalid filter: 'mul'
+[2026-01-17 13:24:38] [ERROR] [django.server] [log:249] "GET /oferta/ HTTP/1.1" 500 192655
+[2026-01-17 13:25:16] [ERROR] [django.request] [log:249] Internal Server Error: /oferta/
+Traceback (most recent call last):
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py", line 545, in pagina_oferta
+    return render(request, 'oferte.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 585, in parse
+    raise self.error(token, e)
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 556, in parse
+    raise self.error(token, e)
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 554, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 676, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 748, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Template: C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\templates\oferte.html, Could not parse some characters: produs.pret| * 0.5||floatformat:2
+[2026-01-17 13:25:16] [ERROR] [django.server] [log:249] "GET /oferta/ HTTP/1.1" 500 187005
+[2026-01-17 13:26:20] [INFO] [django.server] [log:249] "GET /oferta/ HTTP/1.1" 200 3860
+[2026-01-17 13:29:46] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 13:29:46] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:31:50] [ERROR] [django.request] [log:249] Internal Server Error: /oferta/
+Traceback (most recent call last):
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py", line 544, in pagina_oferta
+    produse_si_preturi = [(produs, round(produs.pret * 0.5, 2)) for produs in produse_oferta]
+                                         ~~~~~~~~~~~~^~~~~
+TypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+[2026-01-17 13:31:50] [ERROR] [django.server] [log:249] "GET /oferta/ HTTP/1.1" 500 79249
+[2026-01-17 13:33:23] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 13:33:24] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:33:28] [INFO] [django.server] [log:249] "GET /oferta/ HTTP/1.1" 200 3859
+[2026-01-17 13:43:43] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\models.py changed, reloading.
+[2026-01-17 13:43:44] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:44:11] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:47:57] [WARNING] [django.request] [log:249] Not Found: /
+[2026-01-17 13:47:57] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 7047
+[2026-01-17 13:48:00] [INFO] [django.server] [log:249] "GET /admin/ HTTP/1.1" 302 0
+[2026-01-17 13:48:00] [INFO] [django.server] [log:249] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3615
+[2026-01-17 13:48:04] [INFO] [django.server] [log:249] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2026-01-17 13:48:04] [INFO] [django.server] [log:249] "GET /admin/ HTTP/1.1" 200 14545
+[2026-01-17 13:48:08] [INFO] [django.server] [log:249] "GET /admin/auth/group/ HTTP/1.1" 200 13219
+[2026-01-17 13:48:08] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:48:09] [INFO] [django.server] [log:249] "GET /admin/auth/group/add/ HTTP/1.1" 200 19490
+[2026-01-17 13:48:09] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:49:12] [INFO] [django.server] [log:249] "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+[2026-01-17 13:49:12] [INFO] [django.server] [log:249] "GET /admin/auth/group/ HTTP/1.1" 200 13683
+[2026-01-17 13:49:12] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:49:57] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\admin.py changed, reloading.
+[2026-01-17 13:49:58] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:50:20] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\admin.py changed, reloading.
+[2026-01-17 13:50:21] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:51:13] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 17132
+[2026-01-17 13:51:14] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:51:19] [INFO] [django.server] [log:249] "GET /admin/auth/user/10/change/ HTTP/1.1" 200 50515
+[2026-01-17 13:51:19] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:51:55] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 17132
+[2026-01-17 13:51:57] [INFO] [django.server] [log:249] "GET /admin/auth/user/11/change/ HTTP/1.1" 200 50537
+[2026-01-17 13:51:57] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:52:04] [INFO] [django.server] [log:249] "POST /admin/auth/user/11/change/ HTTP/1.1" 302 0
+[2026-01-17 13:52:04] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 17328
+[2026-01-17 13:52:04] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:52:23] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\admin.py changed, reloading.
+[2026-01-17 13:52:31] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:52:45] [WARNING] [django.request] [log:249] Not Found: /
+[2026-01-17 13:52:45] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 7047
+[2026-01-17 13:52:50] [INFO] [django.server] [log:249] "GET /login/ HTTP/1.1" 200 4900
+[2026-01-17 13:53:01] [INFO] [django] [views:434] Login reusit pentru utilizatorul: mihai12 de la IP 127.0.0.1
+[2026-01-17 13:53:01] [INFO] [django.server] [log:249] "POST /login/ HTTP/1.1" 302 0
+[2026-01-17 13:53:01] [INFO] [django.server] [log:249] "GET /profil/ HTTP/1.1" 200 4817
+[2026-01-17 13:53:44] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\admin.py changed, reloading.
+[2026-01-17 13:53:45] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:54:19] [INFO] [django.server] [log:249] "GET /admin/ HTTP/1.1" 302 0
+[2026-01-17 13:54:19] [INFO] [django.server] [log:249] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3615
+[2026-01-17 13:54:24] [INFO] [django.server] [log:249] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2026-01-17 13:54:24] [INFO] [django.server] [log:249] "GET /admin/ HTTP/1.1" 200 14533
+[2026-01-17 13:54:30] [INFO] [django.server] [log:249] "GET /admin/auth/user/ HTTP/1.1" 200 17132
+[2026-01-17 13:54:30] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 13:54:44] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 13:54:44] [INFO] [django.server] [log:249] "GET /admin/auth/user/11/change/ HTTP/1.1" 200 50545
+[2026-01-17 13:54:44] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-01-17 13:55:58] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 13:55:59] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 14:00:16] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 14:00:17] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 14:00:29] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 14:00:30] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 14:00:45] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-01-17 14:00:45] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-01-17 14:01:13] [INFO] [django.server] [log:249] "GET /login/ HTTP/1.1" 200 4900
+[2026-01-17 14:01:26] [INFO] [django.server] [log:249] "POST /login/ HTTP/1.1" 200 5031
+[2026-02-18 12:55:05] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 12:55:10] [WARNING] [django.request] [log:249] Not Found: /
+[2026-02-18 12:55:10] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 7047
+[2026-02-18 12:55:10] [WARNING] [django.request] [log:249] Not Found: /favicon.ico
+[2026-02-18 12:55:10] [WARNING] [django.server] [log:249] "GET /favicon.ico HTTP/1.1" 404 7098
+[2026-02-18 12:55:15] [INFO] [django.server] [log:249] "GET /admin/ HTTP/1.1" 302 0
+[2026-02-18 12:55:16] [INFO] [django.server] [log:249] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4099
+[2026-02-18 12:55:16] [INFO] [django.server] [log:249] "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+[2026-02-18 12:55:16] [INFO] [django.server] [log:249] "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+[2026-02-18 12:55:16] [INFO] [django.server] [log:249] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+[2026-02-18 12:55:16] [INFO] [django.server] [log:249] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[2026-02-18 12:55:16] [INFO] [django.server] [log:249] "GET /static/admin/css/login.css HTTP/1.1" 200 951
+[2026-02-18 12:55:16] [INFO] [django.server] [log:249] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[2026-02-18 12:55:16] [INFO] [django.server] [log:249] "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[2026-02-18 12:55:21] [INFO] [django.server] [log:249] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4271
+[2026-02-18 12:55:25] [INFO] [django.server] [log:249] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2026-02-18 12:55:25] [INFO] [django.server] [log:249] "GET /admin/ HTTP/1.1" 200 14533
+[2026-02-18 12:55:25] [INFO] [django.server] [log:249] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[2026-02-18 12:55:25] [INFO] [django.server] [log:249] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+[2026-02-18 12:55:25] [INFO] [django.server] [log:249] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+[2026-02-18 12:55:31] [WARNING] [django.request] [log:249] Not Found: /
+[2026-02-18 12:55:31] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 7047
+[2026-02-18 12:55:51] [INFO] [django.server] [log:249] "GET /produse HTTP/1.1" 301 0
+[2026-02-18 12:55:51] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-02-18 12:55:56] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-02-18 12:55:57] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-02-18 12:56:03] [WARNING] [django.request] [log:249] Not Found: /categorii/
+[2026-02-18 12:56:03] [WARNING] [django.server] [log:249] "GET /categorii/ HTTP/1.1" 404 7095
+[2026-02-18 12:56:14] [INFO] [django.server] [log:249] "GET /categorii/1 HTTP/1.1" 301 0
+[2026-02-18 12:56:14] [WARNING] [django.request] [log:249] Not Found: /categorii/1/
+[2026-02-18 12:56:14] [WARNING] [django.server] [log:249] "GET /categorii/1/ HTTP/1.1" 404 3236
+[2026-02-18 12:57:20] [WARNING] [django.request] [log:249] Not Found: /categorie/
+[2026-02-18 12:57:20] [WARNING] [django.server] [log:249] "GET /categorie/ HTTP/1.1" 404 7095
+[2026-02-18 12:57:34] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-02-18 12:57:45] [WARNING] [django.request] [log:249] Not Found: /produse/tablete
+[2026-02-18 12:57:45] [WARNING] [django.server] [log:249] "GET /produse/tablete HTTP/1.1" 404 7110
+[2026-02-18 12:57:58] [INFO] [django.server] [log:249] "GET /promotii/ HTTP/1.1" 200 7259
+[2026-02-18 12:58:06] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-02-18 12:58:08] [INFO] [django.server] [log:249] "GET /produse/?sort=d HTTP/1.1" 200 13145
+[2026-02-18 12:58:12] [INFO] [django.server] [log:249] "GET /produse/?sort=a HTTP/1.1" 200 13086
+[2026-02-18 12:58:16] [INFO] [django.server] [log:249] "GET /produse/?sort=a HTTP/1.1" 200 13086
+[2026-02-18 12:58:34] [WARNING] [django.request] [log:249] Not Found: /
+[2026-02-18 12:58:34] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 7047
+[2026-02-18 13:00:42] [INFO] [django.server] [log:249] "GET /admin/electronice/ HTTP/1.1" 200 9274
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /admin/electronice/categorie/ HTTP/1.1" 200 14813
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /static/admin/css/changelists.css HTTP/1.1" 200 7501
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+[2026-02-18 13:00:47] [INFO] [django.server] [log:249] "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+[2026-02-18 13:01:07] [WARNING] [django.request] [log:249] Not Found: /categorii/
+[2026-02-18 13:01:07] [WARNING] [django.server] [log:249] "GET /categorii/ HTTP/1.1" 404 7095
+[2026-02-18 13:01:11] [INFO] [django.server] [log:249] "GET /categorii/Telefoane/ HTTP/1.1" 200 6944
+[2026-02-18 13:01:23] [INFO] [django.server] [log:249] "GET /categorii/Tablete/ HTTP/1.1" 200 5899
+[2026-02-18 13:01:50] [WARNING] [django.request] [log:249] Not Found: /admin/categorie/
+[2026-02-18 13:01:50] [WARNING] [django.server] [log:249] "GET /admin/categorie/ HTTP/1.1" 404 7267
+[2026-02-18 13:01:57] [INFO] [django.server] [log:249] "GET /admin/electronice/categorie/ HTTP/1.1" 200 14813
+[2026-02-18 13:01:58] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-02-18 13:02:18] [INFO] [django.server] [log:249] "GET /categorii/Televizoare/ HTTP/1.1" 200 5853
+[2026-02-18 13:02:26] [INFO] [django.server] [log:249] "GET /categorii/Laptopuri/ HTTP/1.1" 200 6395
+[2026-02-18 13:02:35] [INFO] [django.server] [log:249] "GET /categorii/Laptopuri/?sort=d HTTP/1.1" 200 6395
+[2026-02-18 13:02:38] [INFO] [django.server] [log:249] "GET /categorii/Laptopuri/?sort=a HTTP/1.1" 200 6395
+[2026-02-18 13:02:40] [INFO] [django.server] [log:249] "GET /categorii/Laptopuri/?sort=d HTTP/1.1" 200 6395
+[2026-02-18 13:02:41] [INFO] [django.server] [log:249] "GET /categorii/Laptopuri/?sort=a HTTP/1.1" 200 6395
+[2026-02-18 13:15:03] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\models.py changed, reloading.
+[2026-02-18 13:15:04] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 13:32:02] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\admin.py changed, reloading.
+[2026-02-18 13:32:03] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 13:34:19] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\admin.py changed, reloading.
+[2026-02-18 13:34:20] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 13:40:26] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-02-18 13:40:27] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 13:41:42] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-02-18 13:41:43] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 13:45:32] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\urls.py changed, reloading.
+[2026-02-18 13:45:32] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 13:48:51] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-02-18 13:48:51] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 13:51:10] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-02-18 13:51:11] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 13:51:32] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-02-18 13:51:32] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 13:53:52] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\urls.py changed, reloading.
+[2026-02-18 13:53:53] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 13:55:50] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-02-18 13:55:50] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 14:10:29] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\forms.py changed, reloading.
+[2026-02-18 14:10:29] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 14:20:38] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\forms.py changed, reloading.
+[2026-02-18 14:20:38] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 14:24:17] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\validators.py changed, reloading.
+[2026-02-18 14:24:18] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 14:34:07] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-02-18 14:34:08] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 14:41:51] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\forms.py changed, reloading.
+[2026-02-18 14:41:51] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 14:42:14] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\forms.py changed, reloading.
+[2026-02-18 14:42:15] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 14:42:26] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\forms.py changed, reloading.
+[2026-02-18 14:42:27] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 14:50:43] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\validators.py changed, reloading.
+[2026-02-18 14:50:43] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 14:56:33] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-02-18 14:56:34] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 15:05:43] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\proiect_electronice\settings.py changed, reloading.
+[2026-02-18 15:17:55] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 15:18:00] [WARNING] [django.request] [log:249] Not Found: /
+[2026-02-18 15:18:00] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 7047
+[2026-02-18 15:18:05] [INFO] [django.server] [log:249] "GET /admin/ HTTP/1.1" 200 14533
+[2026-02-18 15:18:05] [INFO] [django.server] [log:249] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+[2026-02-18 15:18:05] [INFO] [django.server] [log:249] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+[2026-02-18 15:18:10] [INFO] [django.server] [log:249] "GET /register/ HTTP/1.1" 200 7845
+[2026-02-18 15:18:16] [INFO] [django.server] [log:249] "GET /login/ HTTP/1.1" 200 4900
+[2026-02-18 15:18:21] [WARNING] [django.request] [log:249] Not Found: /
+[2026-02-18 15:18:21] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 7047
+[2026-02-18 15:18:39] [INFO] [django.server] [log:249] "GET /profil/ HTTP/1.1" 200 4797
+[2026-02-18 15:18:45] [WARNING] [django.request] [log:249] Forbidden: /interzis/
+[2026-02-18 15:18:45] [WARNING] [django.server] [log:249] "GET /interzis/ HTTP/1.1" 403 3081
+[2026-02-18 15:18:52] [WARNING] [django.request] [log:249] Forbidden: /interzis/
+[2026-02-18 15:18:52] [WARNING] [django.server] [log:249] "GET /interzis/ HTTP/1.1" 403 3081
+[2026-02-18 15:18:53] [WARNING] [django.request] [log:249] Forbidden: /interzis/
+[2026-02-18 15:18:53] [WARNING] [django.server] [log:249] "GET /interzis/ HTTP/1.1" 403 3081
+[2026-02-18 15:18:53] [WARNING] [django.request] [log:249] Forbidden: /interzis/
+[2026-02-18 15:18:53] [WARNING] [django.server] [log:249] "GET /interzis/ HTTP/1.1" 403 3081
+[2026-02-18 15:18:53] [WARNING] [django.request] [log:249] Forbidden: /interzis/
+[2026-02-18 15:18:53] [WARNING] [django.server] [log:249] "GET /interzis/ HTTP/1.1" 403 3081
+[2026-02-18 15:18:54] [WARNING] [django.request] [log:249] Forbidden: /interzis/
+[2026-02-18 15:18:54] [WARNING] [django.server] [log:249] "GET /interzis/ HTTP/1.1" 403 3290
+[2026-02-18 15:19:06] [INFO] [django.server] [log:249] "GET /login/ HTTP/1.1" 200 4900
+[2026-02-18 15:19:09] [INFO] [django.server] [log:249] "GET /log HTTP/1.1" 301 0
+[2026-02-18 15:19:10] [ERROR] [django.request] [log:249] Internal Server Error: /log/
+Traceback (most recent call last):
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py", line 104, in pagina_log
+    lines = f.readlines()[-50:]
+            ^^^^^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe5 in position 5498: invalid continuation byte
+[2026-02-18 15:19:10] [ERROR] [django.server] [log:249] "GET /log/ HTTP/1.1" 500 101061
+[2026-02-18 15:19:16] [INFO] [django.server] [log:249] "GET /info/ HTTP/1.1" 200 3724
+[2026-02-18 15:19:23] [WARNING] [django.request] [log:249] Not Found: /
+[2026-02-18 15:19:23] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 7047
+[2026-02-18 15:19:31] [INFO] [django.server] [log:249] "GET /login/ HTTP/1.1" 200 4900
+[2026-02-18 15:19:37] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\urls.py changed, reloading.
+[2026-02-18 15:19:37] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 16:27:16] [WARNING] [django.request] [log:249] Not Found: /
+[2026-02-18 16:27:16] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 7047
+[2026-02-18 16:27:20] [INFO] [django.server] [log:249] "GET /admin/ HTTP/1.1" 200 14533
+[2026-02-18 16:27:20] [INFO] [django.server] [log:249] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+[2026-02-18 16:27:20] [INFO] [django.server] [log:249] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+[2026-02-18 17:05:05] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 17:05:10] [WARNING] [django.request] [log:249] Not Found: /
+[2026-02-18 17:05:10] [WARNING] [django.server] [log:249] "GET / HTTP/1.1" 404 7047
+[2026-02-18 17:05:18] [INFO] [django.server] [log:249] "GET /admin/ HTTP/1.1" 200 14533
+[2026-02-18 17:05:18] [INFO] [django.server] [log:249] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+[2026-02-18 17:05:18] [INFO] [django.server] [log:249] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+[2026-02-18 17:05:23] [INFO] [django.server] [log:249] "GET /admin/electronice/produs/ HTTP/1.1" 200 19827
+[2026-02-18 17:05:23] [INFO] [django.server] [log:249] "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+[2026-02-18 17:05:23] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-02-18 17:05:23] [INFO] [django.server] [log:249] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+[2026-02-18 17:05:23] [INFO] [django.server] [log:249] "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+[2026-02-18 17:05:23] [INFO] [django.server] [log:249] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1761
+[2026-02-18 17:05:50] [INFO] [django.server] [log:249] "GET /admin/electronice/produs/ HTTP/1.1" 200 19827
+[2026-02-18 17:05:50] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-02-18 17:06:38] [INFO] [django.server] [log:249] "GET /admin/electronice/produs/?o= HTTP/1.1" 200 19913
+[2026-02-18 17:06:38] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-02-18 17:06:41] [INFO] [django.server] [log:249] "GET /admin/electronice/produs/?o=2 HTTP/1.1" 200 20186
+[2026-02-18 17:06:41] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-02-18 17:06:42] [INFO] [django.server] [log:249] "GET /admin/electronice/produs/?o=3.2 HTTP/1.1" 200 20597
+[2026-02-18 17:06:42] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-02-18 17:11:42] [INFO] [django.server] [log:249] "GET /admin/electronice/produs/2/change/?_changelist_filters=o%3D3.2 HTTP/1.1" 200 21976
+[2026-02-18 17:11:42] [INFO] [django.server] [log:249] "GET /static/admin/css/forms.css HTTP/1.1" 200 8788
+[2026-02-18 17:11:42] [INFO] [django.server] [log:249] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[2026-02-18 17:11:42] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-02-18 17:11:42] [INFO] [django.server] [log:249] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 16428
+[2026-02-18 17:11:42] [INFO] [django.server] [log:249] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+[2026-02-18 17:11:42] [INFO] [django.server] [log:249] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11811
+[2026-02-18 17:11:43] [INFO] [django.server] [log:249] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 689
+[2026-02-18 17:11:43] [INFO] [django.server] [log:249] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[2026-02-18 17:11:43] [INFO] [django.server] [log:249] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 2387
+[2026-02-18 17:11:52] [INFO] [django.server] [log:249] "GET /admin/electronice/produs/?o=3.2 HTTP/1.1" 200 20597
+[2026-02-18 17:12:42] [INFO] [django.server] [log:249] "GET /admin/electronice/produs/2/change/?_changelist_filters=o%3D3.2 HTTP/1.1" 200 21976
+[2026-02-18 17:12:42] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-02-18 17:12:50] [INFO] [django.server] [log:249] "GET /admin/electronice/produs/?o=3.2 HTTP/1.1" 200 20597
+[2026-02-18 17:13:21] [INFO] [django.server] [log:249] "GET /admin/electronice/produs/2/change/?_changelist_filters=o%3D3.2 HTTP/1.1" 200 21976
+[2026-02-18 17:13:21] [INFO] [django.server] [log:249] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2026-02-18 17:13:26] [INFO] [django.server] [log:249] "GET /admin/electronice/produs/?o=3.2 HTTP/1.1" 200 20597
+[2026-02-18 17:18:20] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-02-18 17:18:21] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 17:19:52] [INFO] [django.server] [log:249] "GET /produse/ HTTP/1.1" 200 13145
+[2026-02-18 17:23:17] [INFO] [django.server] [log:249] "GET /produse/?sort=a HTTP/1.1" 200 13086
+[2026-02-18 17:23:18] [INFO] [django.server] [log:249] "GET /produse/?sort=d HTTP/1.1" 200 13145
+[2026-02-18 17:23:23] [INFO] [django.server] [log:249] "GET /produse/?sort=a HTTP/1.1" 200 13086
+[2026-02-18 17:29:27] [INFO] [django.server] [log:249] "GET /produse/?page=2&sort=a HTTP/1.1" 200 9730
+[2026-02-18 17:29:30] [INFO] [django.server] [log:249] "GET /produse/?page=1&sort=a HTTP/1.1" 200 13086
+[2026-02-18 17:29:33] [INFO] [django.server] [log:249] "GET /produse/?page=2&sort=a HTTP/1.1" 200 9730
+[2026-02-18 17:29:35] [INFO] [django.server] [log:249] "GET /produse/?page=1&sort=a HTTP/1.1" 200 13086
+[2026-02-18 17:30:14] [INFO] [django.server] [log:249] "GET /produse/?page=2&sort=a HTTP/1.1" 200 9730
+[2026-02-18 17:30:23] [INFO] [django.server] [log:249] "GET /produse/?page=1&sort=a HTTP/1.1" 200 13086
+[2026-02-18 18:31:10] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\validators.py changed, reloading.
+[2026-02-18 18:31:11] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 18:41:33] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\validators.py changed, reloading.
+[2026-02-18 18:41:33] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 19:14:25] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\validators.py changed, reloading.
+[2026-02-18 19:14:26] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader
+[2026-02-18 19:24:11] [INFO] [django.utils.autoreload] [autoreload:265] C:\Users\Mihai Sima\Desktop\proiect_electronice\proiect_electronice\electronice\views.py changed, reloading.
+[2026-02-18 19:24:12] [INFO] [django.utils.autoreload] [autoreload:681] Watching for file changes with StatReloader

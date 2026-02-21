@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ produs.nume }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            color: white;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 2rem;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        
+        .back-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .produs-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        .produs-image {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 300px;
+        }
+        
+        .produs-image img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        .produs-info h1 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .produs-info .price {
+            font-size: 2rem;
+            color: #27ae60;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .produs-info p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: #666;
+        }
+        
+        .produs-info .label {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .produs-categorie {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .produs-taguri {
+            margin-bottom: 1rem;
+        }
+        
+        .tag {
+            display: inline-block;
+            background-color: #e9ecef;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .specificatii {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .specificatii h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .specificatii table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .specificatii table tr {
+            border-bottom: 1px solid #eee;
+        }
+        
+        .specificatii table td {
+            padding: 0.8rem;
+        }
+        
+        .specificatii table td:first-child {
+            font-weight: bold;
+            color: #333;
+            width: 40%;
+        }
+        
+        @media (max-width: 768px) {
+            .produs-detail {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'electronice:produs_list' %}">Inapoi la produse</a>
+    </nav>
+    
+    <div class="container">
+        <!-- Lab 4, Task QuerySets, Ex 2 - Link inapoi la lista -->
+        <div class="back-link">
+            <a href="{% url 'electronice:produs_list' %}">← Inapoi la lista</a>
+        </div>
+        
+        <!-- Lab 4, Task QuerySets, Ex 2 - Detalii complete produs -->
+        <div class="produs-detail">
+            <div class="produs-image">
+                <p>Fara imagine disponibila</p>
+            </div>
+            
+            <div class="produs-info">
+                <h1>{{ produs.nume }}</h1>
+                <div class="price">{{ produs.pret }} RON</div>
+                
+                {% if produs.categorie %}
+                <a href="{% url 'electronice:categorie_detail' produs.categorie.nume %}" 
+                   class="produs-categorie" 
+                   style="background-color: {{ produs.categorie.culoare }};" >
+                    {{ produs.categorie.nume }}
+                </a>
+                {% endif %}
+                
+                <p><span class="label">Cod Produs:</span> {{ produs.cod_produs }}</p>
+                <p><span class="label">Brand:</span> {{ produs.brand.nume }}</p>
+                <p><span class="label">Descriere:</span> {{ produs.descriere }}</p>
+                <p><span class="label">Status:</span> {{ produs.get_status_display }}</p>
+                <p><span class="label">Stoc:</span> {{ produs.stoc }} buc.</p>
+                <p><span class="label">Data adaugare:</span> {{ produs.data_adaugare|date:"d.m.Y H:i" }}</p>
+                
+                {% if produs.taguri.all %}
+                <div class="produs-taguri">
+                    <span class="label">Taguri:</span>
+                    {% for tag in produs.taguri.all %}
+                    <span class="tag">{{ tag.nume }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        
+        <!-- Lab 4, Task QuerySets, Ex 2 - Specificatii produs -->
+        {% if produs.specificatii.all %}
+        <div class="specificatii">
+            <h2>Specificatii Tehnice</h2>
+            <table>
+                {% for spec in produs.specificatii.all %}
+                <tr>
+                    <td>{{ spec.nume_atribut }}</td>
+                    <td>{{ spec.valoare }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

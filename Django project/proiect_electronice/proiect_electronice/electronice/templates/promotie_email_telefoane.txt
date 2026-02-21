@@ -1,0 +1,16 @@
+Subiect: {{ subiect }}
+
+Salut {{ username }}!
+
+Avem o promotie speciala pentru tine la categoria TELEFOANE!
+
+Promotie: {{ nume_promotie }}
+Reducere: {{ procent_reducere }}%
+Valabil pana la: {{ data_expirare }}
+
+{{ mesaj }}
+
+Nu rata aceasta oferta!
+
+Cu drag,
+Echipa Electronice

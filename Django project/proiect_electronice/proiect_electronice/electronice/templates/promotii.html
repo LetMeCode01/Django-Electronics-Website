@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creare Promotie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            color: white;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 2rem;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        input[type="text"],
+        input[type="number"],
+        input[type="datetime-local"],
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+        }
+        
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            cursor: pointer;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 0.5rem;
+            width: 18px;
+            height: 18px;
+        }
+        
+        .errorlist {
+            list-style: none;
+            color: #dc3545;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background-color: #f8d7da;
+            border-radius: 4px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #218838;
+        }
+        
+        .success-message {
+            padding: 1rem;
+            background-color: #d4edda;
+            color: #155724;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .info-box {
+            padding: 1rem;
+            background-color: #e7f3ff;
+            color: #004085;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/produse/">Produse</a>
+        <a href="/electronice/promotii/">Promotii</a>
+        <a href="/contact/">Contact</a>
+        <a href="/profil/">Profil</a>
+    </nav>
+    
+    <div class="container">
+        <h1>Creare Promotie</h1>
+        
+        {% if succes %}
+        <div class="success-message">
+            <strong>Succes!</strong> Promotia "{{ nume_promotie }}" a fost creata si {{ nr_emailuri }} emailuri au fost trimise.
+        </div>
+        {% endif %}
+        
+        <div class="info-box">
+            <strong>Info:</strong> Emailurile vor fi trimise utilizatorilor care au vizualizat minim K produse din categoriile selectate.
+        </div>
+        
+        <form method="post">
+            {% csrf_token %}
+            
+            {% if form.non_field_errors %}
+            <ul class="errorlist">
+                {% for error in form.non_field_errors %}
+                <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            
+            <div class="form-group">
+                <label for="{{ form.subiect.id_for_label }}">{{ form.subiect.label }}</label>
+                {{ form.subiect }}
+                {% if form.subiect.errors %}
+                <ul class="errorlist">
+                    {% for error in form.subiect.errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            
+            <div class="form-group">
+                <label for="{{ form.mesaj.id_for_label }}">{{ form.mesaj.label }}</label>
+                {{ form.mesaj }}
+                {% if form.mesaj.errors %}
+                <ul class="errorlist">
+                    {% for error in form.mesaj.errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            
+            <div class="form-group">
+                <label for="{{ form.nume_promotie.id_for_label }}">{{ form.nume_promotie.label }}</label>
+                {{ form.nume_promotie }}
+                {% if form.nume_promotie.errors %}
+                <ul class="errorlist">
+                    {% for error in form.nume_promotie.errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            
+            <div class="form-group">
+                <label for="{{ form.data_expirare.id_for_label }}">{{ form.data_expirare.label }}</label>
+                {{ form.data_expirare }}
+                {% if form.data_expirare.errors %}
+                <ul class="errorlist">
+                    {% for error in form.data_expirare.errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            
+            <div class="form-group">
+                <label for="{{ form.procent_reducere.id_for_label }}">{{ form.procent_reducere.label }}</label>
+                {{ form.procent_reducere }}
+                {% if form.procent_reducere.errors %}
+                <ul class="errorlist">
+                    {% for error in form.procent_reducere.errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            
+            <div class="form-group">
+                <label for="{{ form.minim_vizualizari.id_for_label }}">{{ form.minim_vizualizari.label }}</label>
+                {{ form.minim_vizualizari }}
+                {% if form.minim_vizualizari.errors %}
+                <ul class="errorlist">
+                    {% for error in form.minim_vizualizari.errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            
+            <div class="form-group">
+                <label>{{ form.categorii.label }}</label>
+                <div class="checkbox-group">
+                    {% for checkbox in form.categorii %}
+                    <label>
+                        {{ checkbox.tag }}
+                        {{ checkbox.choice_label }}
+                    </label>
+                    {% endfor %}
+                </div>
+                {% if form.categorii.errors %}
+                <ul class="errorlist">
+                    {% for error in form.categorii.errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            
+            <button type="submit" class="btn">Creeaza Promotie si Trimite Emailuri</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesaj trimis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            color: white;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 2rem;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .success-message {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+        }
+        
+        .success-message h1 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .details {
+            text-align: left;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        
+        .details p {
+            margin-bottom: 0.75rem;
+        }
+        
+        .back-link {
+            margin-top: 2rem;
+        }
+        
+        .back-link a {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 0.75rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        .back-link a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'electronice:produs_list' %}">Inapoi la produse</a>
+    </nav>
+    
+    <div class="container">
+        <!-- Lab 5, Task 2, Ex 1 - Mesaj de succes -->
+        <div class="success-message">
+            <h1>Mesaj trimis cu succes!</h1>
+            <p>Va multumim pentru contactare. Va vom raspunde in curand.</p>
+        </div>
+        
+        <!-- Lab 5, Task 2, Ex 1 + 4 - Detalii mesaj cu preprocesari -->
+        <div class="details">
+            <p><strong>Nume:</strong> {{ nume }}</p>
+            <p><strong>E-mail:</strong> {{ email }}</p>
+            <p><strong>Tip mesaj:</strong> {{ tip_mesaj }}</p>
+            
+            <!-- Lab 5, Task 2, Ex 4a - Afiseaza varsta in loc de data nasterii -->
+            {% if varsta %}
+            <p><strong>Varsta:</strong> {{ varsta }}</p>
+            {% endif %}
+            
+            <!-- Lab 5, Task 2, Ex 4d - Afiseaza daca e urgent si numele fisierului -->
+            {% if urgent %}
+            <p><strong>Status:</strong> URGENT</p>
+            {% endif %}
+            <p><strong>Fisier salvat:</strong> {{ nume_fisier }}</p>
+        </div>
+        
+        <div class="back-link">
+            <a href="{% url 'electronice:produs_list' %}">← Inapoi la produse</a>
+        </div>
+    </div>
+</body>
+</html>

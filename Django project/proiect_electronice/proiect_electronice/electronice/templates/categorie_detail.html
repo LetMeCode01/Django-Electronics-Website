@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ categorie.nume }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            color: white;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .categorie-header {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .categorie-header h1 {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .categorie-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .sort-options {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .sort-options a {
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        
+        .sort-options a:hover {
+            background-color: #0056b3;
+        }
+        
+        .produs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .produs-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        
+        .produs-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .produs-header {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .produs-header h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .produs-header a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .produs-header a:hover {
+            text-decoration: underline;
+        }
+        
+        .produs-body {
+            padding: 1rem;
+        }
+        
+        .produs-body p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .produs-price {
+            font-size: 1.5rem;
+            color: #27ae60;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .pagination a, .pagination span {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .pagination a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        
+        .pagination .current {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'electronice:produs_list' %}">Home</a></li>
+            <li><a href="{% url 'electronice:produs_list' %}">Produse</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <!-- Lab 4, Task QuerySets, Ex 5 - Header categorie cu culoare/icon -->
+        <div class="categorie-header">
+            <h1>
+                <div class="categorie-icon" style="background-color: {{ categorie.culoare }};" >
+                    {{ categorie.icon }}
+                </div>
+                {{ categorie.nume }}
+            </h1>
+            <p>{{ categorie.descriere }}</p>
+        </div>
+        
+        <!-- Lab 4, Task QuerySets, Ex 3 - Optiuni de sortare -->
+        <div class="sort-options">
+            <a href="{% url 'electronice:categorie_detail' categorie.nume %}?sort=a">Sortare crescatoare (pret)</a>
+            <a href="{% url 'electronice:categorie_detail' categorie.nume %}?sort=d">Sortare descrescatoare (pret)</a>
+        </div>
+        
+        <!-- Lab 4, Task QuerySets, Ex 4 - Produse din categoria -->
+        <div class="produs-grid">
+            {% for produs in produse %}
+            <div class="produs-card">
+                <div class="produs-header">
+                    <h3><a href="{% url 'electronice:produs_detail' produs.pk %}">{{ produs.nume }}</a></h3>
+                </div>
+                <div class="produs-body">
+                    <p><strong>Cod:</strong> {{ produs.cod_produs }}</p>
+                    <p><strong>Brand:</strong> {{ produs.brand.nume }}</p>
+                    <p><strong>Descriere:</strong> {{ produs.descriere|truncatewords:15 }}</p>
+                    <div class="produs-price">{{ produs.pret }} RON</div>
+                </div>
+            </div>
+            {% empty %}
+            <p>Nu au fost gasite produse in aceasta categorie.</p>
+            {% endfor %}
+        </div>
+        
+        <!-- Lab 4, Task QuerySets, Ex 1 - Paginare -->
+        <div class="pagination">
+            {% if page_obj.has_previous %}
+            <a href="?page=1&sort={{ sort }}">Prima</a>
+            <a href="?page={{ page_obj.previous_page_number }}&sort={{ sort }}">Inapoi</a>
+            {% endif %}
+            
+            <span>Pagina {{ page_obj.number }} din {{ page_obj.paginator.num_pages }}</span>
+            
+            {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}&sort={{ sort }}">Inainte</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}&sort={{ sort }}">Ultima</a>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

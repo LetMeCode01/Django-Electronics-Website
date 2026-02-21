@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lab 8, Task 2.4 - Template pagina info -->
+    <title>Info - Admin</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 2rem; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; margin-bottom: 2rem; border-bottom: 2px solid #007bff; padding-bottom: 1rem; }
+        .info-section { margin-bottom: 2rem; }
+        .info-section h2 { color: #007bff; margin-bottom: 1rem; font-size: 1.2rem; }
+        .info-item { display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid #eee; }
+        .info-label { font-weight: bold; color: #333; }
+        .info-value { color: #666; }
+        .apps-list { background: #f8f9fa; padding: 1rem; border-radius: 4px; }
+        .apps-list li { margin-left: 1.5rem; color: #666; }
+        .back-link { display: inline-block; padding: 0.75rem 1.5rem; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px; margin-top: 1rem; }
+        .back-link:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Informatii Sistem</h1>
+        
+        <div class="info-section">
+            <h2>Versiuni</h2>
+            <div class="info-item">
+                <span class="info-label">Django Version:</span>
+                <span class="info-value">{{ info.django_version }}</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Python Version:</span>
+                <span class="info-value">{{ info.python_version }}</span>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>Configurare</h2>
+            <div class="info-item">
+                <span class="info-label">Debug Mode:</span>
+                <span class="info-value">{{ info.debug_mode }}</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Database Engine:</span>
+                <span class="info-value">{{ info.database }}</span>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>Statistici</h2>
+            <div class="info-item">
+                <span class="info-label">Numar Produse:</span>
+                <span class="info-value">{{ info.numar_produse }}</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Numar Categorii:</span>
+                <span class="info-value">{{ info.numar_categorii }}</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Numar Utilizatori:</span>
+                <span class="info-value">{{ info.numar_utilizatori }}</span>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>Aplicatii Instalate</h2>
+            <ul class="apps-list">
+                {% for app in info.installed_apps %}
+                <li>{{ app }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+        <a href="/" class="back-link">Inapoi</a>
+    </div>
+</body>
+</html>

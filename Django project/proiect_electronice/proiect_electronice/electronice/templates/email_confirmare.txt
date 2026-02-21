@@ -1,0 +1,15 @@
+Bun venit pe site-ul Electronice!
+
+Salut {{ prenume }} {{ nume }}!
+
+Username-ul tau: {{ username }}
+
+Pentru a confirma adresa de e-mail, acceseaza linkul:
+{{ link_confirmare }} 
+
+[LOGO ELECTRONICE]
+
+Daca nu te-ai inregistrat pe site, ignora acest mesaj.
+
+Cu drag,
+Echipa Electronice

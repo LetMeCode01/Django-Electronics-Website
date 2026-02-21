@@ -1,0 +1,15 @@
+{
+    "timestamp": 1768502401,
+    "data_ora": "15.01.2026 18:40:01",
+    "ip_utilizator": "127.0.0.1",
+    "nume": "Tyler",
+    "prenume": "One",
+    "cnp": "5030118450021",
+    "varsta": "22 ani si 0 luni",
+    "email": "tyler1@gmail.com",
+    "tip_mesaj": "review",
+    "subiect": "Vreau sa ofer un review corect",
+    "minim_zile_asteptare": 4,
+    "mesaj": "Salut, Super tare Samsung S10. Cand adaugi functia de review produs? Tyler",
+    "urgent": true
+}

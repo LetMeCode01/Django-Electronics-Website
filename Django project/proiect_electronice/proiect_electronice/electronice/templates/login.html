@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="checkbox"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: Arial, sans-serif;
+        }
+        
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 0.5rem;
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+        
+        .form-check {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-check label {
+            margin-bottom: 0;
+            margin-left: 0.5rem;
+            font-weight: normal;
+        }
+        
+        .errorlist {
+            list-style: none;
+            color: #dc3545;
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+        }
+        
+        .form-errors {
+            color: #dc3545;
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+        
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        .register-link {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+        
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Lab 6, Task 2, Ex 4 - Formular login -->
+    <div class="container">
+        <h1>Login</h1>
+
+        <!-- Lab 7, Task 1f - Eroare email neconfirmat -->
+        {% if eroare %}
+        <div class="errorlist">
+        <li>{{ eroare }}</li>
+        </div>
+        {% endif %}
+        
+        <form method="POST">
+            {% csrf_token %}
+            
+            <!-- Lab 6, Task 2, Ex 4 - Erori generale -->
+            {% if form.non_field_errors %}
+            <div class="errorlist">
+                {% for error in form.non_field_errors %}
+                <li>{{ error }}</li>
+                {% endfor %}
+            </div>
+            {% endif %}
+            
+            <!-- Lab 6, Task 2, Ex 4 - Username -->
+            <div class="form-group">
+                <label for="{{ form.username.id_for_label }}">Username</label>
+                {{ form.username }}
+                {% if form.username.errors %}
+                <div class="form-errors">{{ form.username.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 4 - Password -->
+            <div class="form-group">
+                <label for="{{ form.password.id_for_label }}">Parola</label>
+                {{ form.password }}
+                {% if form.password.errors %}
+                <div class="form-errors">{{ form.password.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 4 - Checkbox "Tine-ma logat" -->
+            <div class="form-check">
+                {{ form.remember_me }}
+                <label for="{{ form.remember_me.id_for_label }}">{{ form.remember_me.label }}</label>
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 4 - Buton login -->
+            <button type="submit">Login</button>
+        </form>
+        
+        <!-- Lab 6, Task 2, Ex 4 - Link catre inregistrare -->
+        <div class="register-link">
+            Nu ai cont? <a href="{% url 'electronice:register' %}">Inregistreaza-te</a>
+        </div>
+    </div>
+</body>
+</html>

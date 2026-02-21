@@ -1,0 +1,18 @@
+<head>
+</head>
+<body>
+    {% include 'sidebar.html' %}
+    <div style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+        <a href="oferte/1" id="reducere" style="color: red; font-size: larger; font-weight: 600;"></a>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        if(Math.random() < 0.3) {
+            document.getElementById("reducere").innerHTML = "Reducere"
+        }
+    </script>
+</body>

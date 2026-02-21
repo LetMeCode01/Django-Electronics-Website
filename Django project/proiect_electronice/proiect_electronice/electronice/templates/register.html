@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inregistrare</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: Arial, sans-serif;
+        }
+        
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .errorlist {
+            list-style: none;
+            color: #dc3545;
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+        }
+        
+        .helptext {
+            display: block;
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 0.25rem;
+        }
+        
+        .form-errors {
+            color: #dc3545;
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+        
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        .login-link {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+        
+        .login-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Lab 6, Task 2, Ex 3 - Formular inregistrare -->
+    <div class="container">
+        <h1>Inregistrare</h1>
+        
+        <form method="POST">
+            {% csrf_token %}
+            
+            <!-- Lab 7, Task 3b - Eroare pentru username "admin" -->
+            {% if eroare_admin %}
+            <div class="errorlist">
+                <li>{{ eroare_admin }}</li>
+            </div>
+            {% endif %}
+            
+            <!-- Lab 6, Task 2, Ex 3 - Erori generale -->
+            {% if form.non_field_errors %}
+            <div class="errorlist">
+                {% for error in form.non_field_errors %}
+                <li>{{ error }}</li>
+                {% endfor %}
+            </div>
+            {% endif %}
+            
+            <!-- Lab 6, Task 2, Ex 3 - Username -->
+            <div class="form-group">
+                <label for="{{ form.username.id_for_label }}">Username</label>
+                {{ form.username }}
+                {% if form.username.errors %}
+                <div class="form-errors">{{ form.username.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 3 - Prenume -->
+            <div class="form-group">
+                <label for="{{ form.first_name.id_for_label }}">Prenume</label>
+                {{ form.first_name }}
+                {% if form.first_name.errors %}
+                <div class="form-errors">{{ form.first_name.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 3 - Nume -->
+            <div class="form-group">
+                <label for="{{ form.last_name.id_for_label }}">Nume</label>
+                {{ form.last_name }}
+                {% if form.last_name.errors %}
+                <div class="form-errors">{{ form.last_name.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 3 - Email -->
+            <div class="form-group">
+                <label for="{{ form.email.id_for_label }}">E-mail</label>
+                {{ form.email }}
+                {% if form.email.errors %}
+                <div class="form-errors">{{ form.email.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 3 - Telefon (cu validator) -->
+            <div class="form-group">
+                <label for="{{ form.telefon.id_for_label }}">{{ form.telefon.label }}</label>
+                {{ form.telefon }}
+                {% if form.telefon.errors %}
+                <div class="form-errors">{{ form.telefon.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 3 - Tara -->
+            <div class="form-group">
+                <label for="{{ form.tara.id_for_label }}">{{ form.tara.label }}</label>
+                {{ form.tara }}
+                {% if form.tara.errors %}
+                <div class="form-errors">{{ form.tara.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 3 - Judet (cu validator) -->
+            <div class="form-group">
+                <label for="{{ form.judet.id_for_label }}">{{ form.judet.label }}</label>
+                {{ form.judet }}
+                {% if form.judet.errors %}
+                <div class="form-errors">{{ form.judet.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 3 - Strada -->
+            <div class="form-group">
+                <label for="{{ form.strada.id_for_label }}">{{ form.strada.label }}</label>
+                {{ form.strada }}
+                {% if form.strada.errors %}
+                <div class="form-errors">{{ form.strada.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 3 - Cod Postal (cu validator) -->
+            <div class="form-group">
+                <label for="{{ form.cod_postal.id_for_label }}">{{ form.cod_postal.label }}</label>
+                {{ form.cod_postal }}
+                {% if form.cod_postal.errors %}
+                <div class="form-errors">{{ form.cod_postal.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 3 - Password -->
+            <div class="form-group">
+                <label for="{{ form.password1.id_for_label }}">Parola</label>
+                {{ form.password1 }}
+                {% if form.password1.errors %}
+                <div class="form-errors">{{ form.password1.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 3 - Confirm Password -->
+            <div class="form-group">
+                <label for="{{ form.password2.id_for_label }}">Confirma Parola</label>
+                {{ form.password2 }}
+                {% if form.password2.errors %}
+                <div class="form-errors">{{ form.password2.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 6, Task 2, Ex 3 - Buton inregistrare -->
+            <button type="submit">Inregistreaza</button>
+        </form>
+        
+        <!-- Lab 6, Task 2, Ex 3 - Link catre login -->
+        <div class="login-link">
+            Ai deja cont? <a href="{% url 'electronice:login' %}">Login aici</a>
+        </div>
+    </div>
+</body>
+</html>

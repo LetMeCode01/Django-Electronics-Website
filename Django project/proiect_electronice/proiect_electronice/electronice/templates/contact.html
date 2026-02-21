@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            color: white;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 2rem;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        input[type="number"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .help-text {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        .errorlist {
+            list-style: none;
+            color: #dc3545;
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+        }
+        
+        .errorlist li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-errors {
+            color: #dc3545;
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+        
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        .back-link {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .back-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'electronice:produs_list' %}">Inapoi la produse</a>
+    </nav>
+    
+    <div class="container">
+        <!-- Lab 5, Task 2, Ex 1 - Titlu pagina contact -->
+        <h1>Formular Contact</h1>
+        
+        <!-- Lab 5, Task 2, Ex 1 - Formular cu toate campurile -->
+        <form method="POST">
+            {% csrf_token %}
+            
+            <!-- Lab 5, Task 2, Ex 1a - Nume -->
+            <div class="form-group">
+                <label for="{{ form.nume.id_for_label }}">{{ form.nume.label }}</label>
+                {{ form.nume }}
+                {% if form.nume.errors %}
+                <div class="form-errors">{{ form.nume.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 5, Task 2, Ex 1b - Prenume -->
+            <div class="form-group">
+                <label for="{{ form.prenume.id_for_label }}">{{ form.prenume.label }}</label>
+                {{ form.prenume }}
+                {% if form.prenume.errors %}
+                <div class="form-errors">{{ form.prenume.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 5, Task 2, Ex 1c - CNP -->
+            <div class="form-group">
+                <label for="{{ form.cnp.id_for_label }}">{{ form.cnp.label }}</label>
+                {{ form.cnp }}
+                {% if form.cnp.errors %}
+                <div class="form-errors">{{ form.cnp.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 5, Task 2, Ex 1d - Data nasterii -->
+            <div class="form-group">
+                <label for="{{ form.data_nasterii.id_for_label }}">{{ form.data_nasterii.label }}</label>
+                {{ form.data_nasterii }}
+                {% if form.data_nasterii.errors %}
+                <div class="form-errors">{{ form.data_nasterii.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 5, Task 2, Ex 1e - Email -->
+            <div class="form-group">
+                <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
+                {{ form.email }}
+                {% if form.email.errors %}
+                <div class="form-errors">{{ form.email.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 5, Task 2, Ex 1f - Confirmare email -->
+            <div class="form-group">
+                <label for="{{ form.confirmare_email.id_for_label }}">{{ form.confirmare_email.label }}</label>
+                {{ form.confirmare_email }}
+                {% if form.confirmare_email.errors %}
+                <div class="form-errors">{{ form.confirmare_email.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 5, Task 2, Ex 1g - Tip mesaj -->
+            <div class="form-group">
+                <label for="{{ form.tip_mesaj.id_for_label }}">{{ form.tip_mesaj.label }}</label>
+                {{ form.tip_mesaj }}
+                {% if form.tip_mesaj.errors %}
+                <div class="form-errors">{{ form.tip_mesaj.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 5, Task 2, Ex 1h - Subiect -->
+            <div class="form-group">
+                <label for="{{ form.subiect.id_for_label }}">{{ form.subiect.label }}</label>
+                {{ form.subiect }}
+                {% if form.subiect.errors %}
+                <div class="form-errors">{{ form.subiect.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 5, Task 2, Ex 1i - Minim zile asteptare -->
+            <div class="form-group">
+                <label for="{{ form.minim_zile_asteptare.id_for_label }}">{{ form.minim_zile_asteptare.label }}</label>
+                {{ form.minim_zile_asteptare }}
+                <span class="help-text">{{ form.minim_zile_asteptare.help_text }}</span>
+                {% if form.minim_zile_asteptare.errors %}
+                <div class="form-errors">{{ form.minim_zile_asteptare.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Lab 5, Task 2, Ex 1j - Mesaj cu semnatura -->
+            <div class="form-group">
+                <label for="{{ form.mesaj.id_for_label }}">{{ form.mesaj.label }}</label>
+                {{ form.mesaj }}
+                {% if form.mesaj.errors %}
+                <div class="form-errors">{{ form.mesaj.errors.0 }}</div>
+                {% endif %}
+            </div>
+            
+            <!-- Erori generale -->
+            {% if form.non_field_errors %}
+            <div class="errorlist">
+                {% for error in form.non_field_errors %}
+                <li>{{ error }}</li>
+                {% endfor %}
+            </div>
+            {% endif %}
+            
+            <!-- Lab 5, Task 2, Ex 1 - Buton trimitere -->
+            <button type="submit">Trimite mesaj</button>
+        </form>
+        
+        <div class="back-link">
+            <a href="{% url 'electronice:produs_list' %}">← Inapoi la produse</a>
+        </div>
+    </div>
+</body>
+</html>

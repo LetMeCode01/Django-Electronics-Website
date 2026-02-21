@@ -1,0 +1,37 @@
+<!-- Lab 8, Task 2.5 - Sidebar cu linkuri conditionate de permisiuni -->
+<div class="sidebar" style="height: 100%; position: fixed; width: auto; top: 0; left: 0; background-color: gray; padding: 1rem;">
+    {% if user.is_authenticated %}
+    <a href="{% url 'electronice:profil' %}" style="color: white; display: block; margin-bottom: 0.5rem;">Profil</a>
+    {% else %}
+    <a href="{% url 'electronice:login' %}" style="color: white; display: block; margin-bottom: 0.5rem;">Log in</a>
+    <a href="{% url 'electronice:register' %}" style="color: white; display: block; margin-bottom: 0.5rem;">Sign up</a>
+    {% endif %}
+    
+    <a href="{% url 'electronice:produs_list' %}" style="color: white; display: block; margin-bottom: 0.5rem;">Produse</a>
+    
+    {% if perms.electronice.discount %}
+    <a href="{% url 'electronice:produs_list' %}?oferte=1" style="color: white; display: block; margin-bottom: 0.5rem;">Oferte</a>
+    {% endif %}
+    
+    <!-- Lab 8, Task 2.5 - Link adauga produs doar pentru cei cu permisiune -->
+    {% if perms.electronice.add_produs %}
+    <a href="{% url 'electronice:adauga_produs' %}" style="color: #28a745; display: block; margin-bottom: 0.5rem;">+ Adauga Produs</a>
+    {% endif %}
+    
+    <!-- Lab 8, Task 2.5 - Linkuri /log si /info doar pentru Administratori_site sau superuser -->
+    {% if user.is_superuser or user.groups.all|length > 0 %}
+        {% for group in user.groups.all %}
+            {% if group.name == 'Administratori_site' %}
+            <hr style="border-color: #666; margin: 0.5rem 0;">
+            <a href="{% url 'electronice:info' %}" style="color: #ffc107; display: block; margin-bottom: 0.5rem;">Info Sistem</a>
+            <a href="{% url 'electronice:log' %}" style="color: #ffc107; display: block; margin-bottom: 0.5rem;">Logs</a>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    
+    {% if user.is_superuser %}
+    <hr style="border-color: #666; margin: 0.5rem 0;">
+    <a href="{% url 'electronice:info' %}" style="color: #ffc107; display: block; margin-bottom: 0.5rem;">Info Sistem</a>
+    <a href="{% url 'electronice:log' %}" style="color: #ffc107; display: block; margin-bottom: 0.5rem;">Logs</a>
+    {% endif %}
+</div>
