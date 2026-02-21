@@ -186,12 +186,10 @@ Asigura integritate si performanta la interogari.
 ### 🔹 Role-Based Access Control (RBAC)
 
 - Implementare roluri: Administratori_produse, Administratori_site.
-- Model folosit in companii mari.
 
 ### 🔹 Conditional UI Rendering
 
 - Afisare elemente in functie de permisiuni.
-- Standard in aplicatii moderne.
 
 
 # 🎯 Functionalitati Avansate
