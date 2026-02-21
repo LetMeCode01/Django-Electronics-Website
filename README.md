@@ -1,2 +1,2 @@
-# 🎩Django-Electronics-Website
+# 🎩Electronics Website developed in Django
 
