@@ -192,7 +192,7 @@ Asigura integritate si performanta la interogari.
 - Afisare elemente in functie de permisiuni.
 
 
-# 🎯 Functionalitati Avansate
+## 🎯 Functionalitati Avansate
 
 ### 🔹 Dynamic Promotional Banner (probabilistic display)
 
